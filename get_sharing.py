@@ -1,6 +1,8 @@
 import itchat
 import itchat.content as ct
+from bs4 import BeautifulSoup
 from wechat_voucher import open_url_shouqiev as ous
+
 
 domain = "api.shouqiev.com"                 # 用来判断是否为gofun的券
 

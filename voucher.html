@@ -1,0 +1,191 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GoFun共享汽车</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+    <script src="/js/red/flexible.min.js"></script>
+    <script src="/js/red/zepto-1.2.0.min.js"></script>
+    <script src="https://api.shouqiev.com/js/share/share_jsonp.js"></script>
+    <link rel="stylesheet" href="/css/red/style.css?1">
+    <script type="text/javascript">
+    window.onload = function () {
+        if (navigator.userAgent.indexOf("Android") != -1) {
+            document.querySelectorAll("#bottom-btns a")[0].style.paddingTop = "0.45rem";
+            document.querySelectorAll("#bottom-btns a")[1].style.paddingTop = "0.45rem";
+        }
+    }
+    </script>
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?93a9e137393fca3dd0fcf57a44be5bbc";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+</head>
+<body style="..." ontouchstart="" onmouseover="">
+<input type="hidden" id="js-ctx" value="http://api.shouqiev.com">
+    <div class="wrap">
+        <div class="header"></div>
+        <div class="content-wrap bg-gray">
+            <div class="content">
+               <div class="user-info-wrap">
+                    </div>
+                <div class="card-wrap error">
+                    你来晚了~
+                </div>
+                <div class="friends-wrap">
+                    <div class="tip-title mt-58">
+                        <div class="line"></div>
+                        <span>看看小伙伴的手气</span>
+                    </div>
+                    <div class="friends-list">
+                        <ul>
+                            <li>
+                                    <img src="http://thirdwx.qlogo.cn/mmopen/vi_32/x5deeuBvDxm0FFwSNn0hANiaY4o1YxbSjI2cvkJOwzib6icKibrpU4oXiaG9urvltEX589skDSNWBib7shvC8JCopIAA/132">
+                                    <div class="main">
+                                        <p class="name">shinker</p>
+                                        <p class="date">2018-08-07 16:33:57</p>
+                                    </div>
+                                    <div class="right">
+                                            9.0折</div>
+                                </li>
+                            <li>
+                                    <img src="http://thirdwx.qlogo.cn/mmopen/vi_32/DYAIOgq83eoIzb8PejeqSHKiaJ7JZxv3bOxaPcwr31ibcwD6kMH3bSXmEbC2XVo753Drrk5UnzMOics0GfL18fWKw/132">
+                                    <div class="main">
+                                        <p class="name">a 叶 子</p>
+                                        <p class="date">2018-08-07 16:34:21</p>
+                                    </div>
+                                    <div class="right">
+                                            8.5折</div>
+                                </li>
+                            <li>
+                                    <img src="http://wx.qlogo.cn/mmopen/vi_32/DYAIOgq83er2aCywnPRZuXdb0MwIbIHOEaiazqLRTZbA8DbUEAyITSGeiaZv8WxLkwZcd0qCj6ickpl1oNCvo7xQg/0">
+                                    <div class="main">
+                                        <p class="name">辰</p>
+                                        <p class="date">2018-08-07 16:34:22</p>
+                                    </div>
+                                    <div class="right">
+                                            8.5折</div>
+                                </li>
+                            <li>
+                                    <img src="http://thirdwx.qlogo.cn/mmopen/vi_32/7tEdeN11bEYXQJ5HJH1STOxQhCgjcUY7O7fJtjTr7THdMFKGrErFLZUReXYVsNYE4rCwGmACqpg0jZcqynjD3Q/132">
+                                    <div class="main">
+                                        <p class="name">温州老师伯老黑</p>
+                                        <p class="date">2018-08-07 16:35:19</p>
+                                    </div>
+                                    <div class="right">
+                                            8.5折</div>
+                                </li>
+                            <li>
+                                    <img src="http://thirdwx.qlogo.cn/mmopen/vi_32/xUAH51dgY17wjicCuXyfZIkYaW5RpOibGsoibk7U3dgQia36TtwfB4iaQydibkiaDQMKyD6iaBheauib0icoZ3Kqaz5ZdicrQ/132">
+                                    <div class="main">
+                                        <p class="name">Schert</p>
+                                        <p class="date">2018-08-07 16:36:31</p>
+                                    </div>
+                                    <div class="right">
+                                            8.0折</div>
+                                </li>
+                            <li>
+                                    <img src="http://thirdwx.qlogo.cn/mmopen/vi_32/6F3SZJXIPticuG0wvcCzJSFchngzDmx62W4T7p8cSpPnU37oWmxcQBHzKUfRkInN1Jbn6lwAW9W0R1eoWw9pFCw/132">
+                                    <div class="main">
+                                        <p class="name">cao</p>
+                                        <p class="date">2018-08-07 16:37:04</p>
+                                    </div>
+                                    <div class="right">
+                                            8.0折</div>
+                                </li>
+                            <li>
+                                    <img src="http://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTIKiaf9mzfYTY1nks75JzrF2gHt1NhXM4kMrF3S1Cc1lYbx1gjMicSWSG6FXItnGBP6SC6thMwIY2CQ/132">
+                                    <div class="main">
+                                        <p class="name">何广福</p>
+                                        <p class="date">2018-08-07 16:37:08</p>
+                                    </div>
+                                    <div class="right">
+                                            9.0折</div>
+                                </li>
+                            </ul>
+                    </div>
+                </div>
+                <div class="tip-wrap">
+                    <div class="tip-title mt-58">
+                        <div class="line"></div>
+                        <span>活动说明</span>
+                    </div>
+                    <div class="tip-content h-300">
+                        <ul>
+                            <li>1.输入手机号后「抢红包」，即可参与抢红包活动，每场活动每个用户只能参与 1 次；</li>
+                            <li>2.未注册用户首次参与抢红包后，可获得 1 元 3 小时用车体验劵，首次用车后还有更多奖励；</li>
+                            <li>3.优惠券有效期、使用规则以 App 内展示为准。</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="bottom-logo"></div>
+            </div>
+        </div>
+       <div id="bottom-btns">
+        <a id="dl-app" href="http://a.app.qq.com/o/simple.jsp?pkgname=com.gvsoft.gofun&channel=0002160650432d595942&fromcase=60001">下载APP</a>
+        <a id="to-h5car" href="http://go.shouqiev.com?channelId=Q1805250001_Q1805250002_Q1805250059_GF&tag=web-gf-redpacket">马上用车</a>
+       </div>
+
+    </div>
+
+    <div class="toast-wrap">
+        <div class="toast"></div>
+    </div>
+
+</body>
+<script src="/js/red/index.js"></script>
+
+
+
+<script type="text/javascript">
+
+function changePhone(){
+    var openId = "";
+
+    $.ajax({
+        type: 'POST',
+        url: '/share/changePhone.json',
+        data: {openId:openId},
+        dataType: 'json',
+        timeout: 10000,
+        context: $('body'),
+        success: function(data){
+            if(data.code==200){
+                delCookie("delete");
+                location.href = "/share/shareRedEnvelope.json?orderId=180807144928943MOEDW32";
+            }else{
+                alert(data.desc);
+                //fnToast('大幅度送')
+            }
+
+        },
+        error: function(xhr, type){
+        }
+
+    });
+}
+
+function setUserCookie(){
+    setCookie("a22bccc7460344a423a03389c1f5587c","delete");
+}
+
+function setCookie(name,value)
+{
+    var Days = 30;
+    var exp = new Date();
+    exp.setTime(exp.getTime() + Days*24*60*60*1000);
+    document.cookie = name + "="+ escape (value) + ";expires=" + exp.toGMTString();
+}
+
+function delCookie(name)
+{
+    var exp = new Date();
+    exp.setTime(exp.getTime() - 1);
+    document.cookie= name + "="+null+";expires="+exp.toGMTString();
+}
+</script>
+</html>

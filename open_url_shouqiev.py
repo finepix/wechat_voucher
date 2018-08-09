@@ -1,4 +1,5 @@
 import requests
+from wechat_voucher import html_parse
 
 # domain = 'http://api.shouqiev.com'
 # url = domain + '/share/shareRedEnvelope.json?orderId=180807144928943MOEDW32&from=singlemessage '
@@ -26,12 +27,12 @@ cookies = {
 def open_url(url):
     s = requests.session()
     rs = s.get(url, headers=headers, cookies=cookies)
-    print(rs.text)
+    html_parse.get_result_from_html(rs.text)
 
 
-if __name__ == '__main__':
-
-    ss = requests.session()
-    r = ss.get(url, headers=headers, cookies=cookies)
-    print(r.text)
+# if __name__ == '__main__':
+#
+#     ss = requests.session()
+#     r = ss.get(url, headers=headers, cookies=cookies)
+#     print(r.text)
 
