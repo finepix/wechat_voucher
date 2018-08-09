@@ -17,7 +17,7 @@ def get_result_from_html(html_text):
         :param html_text:
         :return:
     '''
-    soup = BeautifulSoup(html_text)
+    soup = BeautifulSoup(html_text, 'html.parser')
     rs = soup.select('.card-wrap')
     for r in rs:
         print(r.get_text().replace(' ', ''))                                      # 未抢到
