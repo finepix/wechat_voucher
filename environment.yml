@@ -1,0 +1,15 @@
+name: itchat
+dependencies:
+- jupyter
+- python
+- pip:
+  - itchat 
+  - requests
+  - urllib3
+  - chardet
+  - idna
+  - pyqrcode
+  - png
+  - scrapy
+  - beautifulsoup4
+  
