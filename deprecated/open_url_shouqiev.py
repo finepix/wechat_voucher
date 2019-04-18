@@ -1,5 +1,5 @@
 import requests
-from wechat_voucher import html_parse
+from wechat_voucher.deprecated import html_parse
 
 # domain = 'http://api.shouqiev.com'
 # url = domain + '/share/shareRedEnvelope.json?orderId=180807144928943MOEDW32&from=singlemessage '

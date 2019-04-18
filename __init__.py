@@ -1,3 +1,1 @@
-
-from . import open_url_shouqiev
-from . import get_sharing
+from wechat_voucher.deprecated import get_sharing
